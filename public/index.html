@@ -12,14 +12,22 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="keywords" content="интернет-магазин, заказать, купить" />
     <meta name="description" content="Оптимальный интернет-магазин" />
+
     <link href="https://vita-nord.ru/bitrix/js/main/core/css/core.css?16214073773963" type="text/css" rel="stylesheet" />
 
-    <link href="https://vita-nord.ru/bitrix/cache/css/s1/aspro_optimus/kernel_main/kernel_main_v1.css?163231474210429" type="text/css" rel="stylesheet" />
-    <link href="https://vita-nord.ru/bitrix/js/ui/fonts/opensans/ui.font.opensans.css?16214073742003" type="text/css" rel="stylesheet" />
-    <link href="https://vita-nord.ru/bitrix/js/main/popup/dist/main.popup.bundle.css?162140737526339" type="text/css" rel="stylesheet" />
-    <link href="https://vita-nord.ru/bitrix/cache/css/s1/aspro_optimus/page_e53b76a1316b7e32e90f131688869fbf/page_e53b76a1316b7e32e90f131688869fbf_v1.css?16323148505126" type="text/css" rel="stylesheet" />
-    <link href="https://vita-nord.ru/bitrix/panel/main/popup.css?162140737723084" type="text/css" rel="stylesheet" />
-    <link href="https://vita-nord.ru/bitrix/cache/css/s1/aspro_optimus/template_d1b6ff2a66956b9f149e11707bcacb63/template_d1b6ff2a66956b9f149e11707bcacb63_v1.css?1632483996807897" type="text/css" data-template-style="true" rel="stylesheet" />
+
+
+    <link href="https://vita-nord.ru/bitrix/cache/css/s1/aspro_optimus/kernel_main/kernel_main_v1.css?163249335310429" type="text/css"  rel="stylesheet" />
+    <link href="https://vita-nord.ru/bitrix/js/ui/fonts/opensans/ui.font.opensans.css?16214073742003" type="text/css"  rel="stylesheet" />
+    <link href="https://vita-nord.ru/bitrix/js/main/popup/dist/main.popup.bundle.css?162140737526339" type="text/css"  rel="stylesheet" />
+    <link href="https://vita-nord.ru/bitrix/cache/css/s1/aspro_optimus/page_e53b76a1316b7e32e90f131688869fbf/page_e53b76a1316b7e32e90f131688869fbf_v1.css?16324962675126" type="text/css"  rel="stylesheet" />
+    <link href="https://vita-nord.ru/bitrix/panel/main/popup.css?162140737723084" type="text/css"  rel="stylesheet" />
+    <link href="https://vita-nord.ru/bitrix/cache/css/s1/aspro_optimus/template_0cbf230984c05385e2716f2a46c0310b/template_0cbf230984c05385e2716f2a46c0310b_v1.css?1632496210812153" type="text/css"  data-template-style="true" rel="stylesheet" />
+
+    
+    <link rel="stylesheet" href="css/main.css">
+    
+    
     <script type="text/javascript">
         if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess==='object'){for(let i in mess) {BX.message[i]=mess[i];} return true;}};
     </script>
@@ -1447,19 +1455,21 @@
                                                             <div class="form-payment__bonus__title">Укажите количество бонусов для списания с вашей карты «Снегири»</div>
                                                             <div class="form-payment__bonus__item">
                                                                 <div class="form-payment__bonus__label">
-                                                                    <div class="form-payment__bonus__label__icon"></div>
+                                                                    <div class="form-payment__bonus__label__icon">
+                                                                        <img src="images/icons/bonus.svg" alt="">
+                                                                    </div>
                                                                     <div class="form-payment__bonus__label__text">
-                                                                        <div>Доступно бонусов для списания:</div>
-                                                                        <div class="form-payment__bonus__count">0 из 0</div>
+                                                                        <span>Доступно бонусов для списания:</span>
+                                                                        <span class="form-payment__bonus__count">0 из 0</span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-payment__bonus__input">
-                                                                    <input type="text">
+                                                                    <input type="text" value="0">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="form-payment__bonus__right">
-                                                            <div class="form-payment__bonus__card"></div>
+                                                            <img src="images/temp/card.png" alt="">
                                                         </div>
                                                     </div>
                                                     <div class="form-payment__sep"></div>
@@ -1468,10 +1478,11 @@
                                                             <input name="radio" type="radio">
                                                             <div class="form-payment__method__box">
                                                                 <div class="form-payment__method__icon">
-                                                                    <img src="images/icons/cash.svg" alt="">
+                                                                    <img src="images/icons/card.svg" alt="">
                                                                 </div>
                                                                 <div class="form-payment__method__name">
-                                                                    Оплата картой при получении
+                                                                    Оплата картой 
+                                                                    <br>при получении
                                                                 </div>
                                                             </div>
                                                         </label>
@@ -1479,20 +1490,21 @@
                                                             <input name="radio" type="radio">
                                                             <div class="form-payment__method__box">
                                                                 <div class="form-payment__method__icon">
-                                                                    <img src="images/icons/card.svg" alt="">
+                                                                    <img src="images/icons/cash.svg" alt="">
                                                                 </div>
                                                                 <div class="form-payment__method__name">
-                                                                    Оплата наличными при получении
+                                                                    Оплата наличными 
+                                                                    <br>при получении
                                                                 </div>
                                                             </div>
                                                         </label>
                                                     </div>
                                                     <div class="form-payment__apply">
                                                         <div class="form-payment__apply__item">
-                                                            <a href="#" class="form-payment__prev">Назад</a>
+                                                            <a href="#" class="form-payment__apply__prev">Назад</a>
                                                         </div>
                                                         <div class="form-payment__apply__item">
-                                                            <a href="#" class="form-payment__next">Далее</a>
+                                                            <a href="#" class="form-payment__apply__next">Далее</a>
                                                         </div>
                                                     </div>
                                                 </div>
