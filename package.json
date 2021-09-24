@@ -2,7 +2,7 @@
   "name": "fix-vita-nord-12643",
   "repository": {
     "type" : "git",
-    "url" : "git@github.com:ildar-meyker/fix-vita-nord-12643.git"
+    "url" : "https://github.com/ildar-meyker/fix-vita-nord-12643.git"
   },
   "version": "0.0.1",
   "description": "",
